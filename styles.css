@@ -1,0 +1,146 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+    background-color: #2f4f4f;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif; /* Bold font */
+    font-weight: 700; /* Make it bold */
+    color: #ffffff; /* White color */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Glow effect */
+    animation: headingGlow 2s infinite alternate; 
+    letter-spacing: 1px;
+}
+
+@keyframes headingGlow {
+    from {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    }
+    to {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    }
+}
+
+.container {
+    /* width: 90%; */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #485f5f;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cdd2d2;
+    font-weight: 600;
+}
+
+#hero {
+    background-color: #5f6b6b;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 50px; */
+    
+}
+
+
+
+
+#hero h2 {
+     border-right: solid white 4px;
+     height: 28px;
+     display: flex;
+     justify-content: center;
+     
+} 
+
+.btn {
+    display: inline-block;
+    background-color: #778899;
+    color: #e0e0e0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 100px;
+}
+
+#about, #projects, #contact {
+    padding: 80px 0;
+}
+
+#about .about-content {
+    display: flex;
+    align-items: center;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-item {
+    background-color: #485f5f;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-item h3, .project-item p {
+    padding: 0 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+footer {
+    background-color: #36454f;
+    color: #e0e0e0;
+}
